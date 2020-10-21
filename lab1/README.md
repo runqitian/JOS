@@ -1,8 +1,7 @@
-# MIT 6.828 lab 1
+T 6.828 lab 1
 ## Resource
-
-## Prerequisite Knowledge
-
+[course link](https://pdos.csail.mit.edu/6.828/2018/labguide.html)  
+[github solution link](https://github.com/runqitian/JOS)  
 
 Before we get started, set up the environment following the lab instructions. 
 ## Part 1: PC Bootstrap
@@ -329,7 +328,9 @@ GCC behavior:
 > We can set it by -mpreferred-stack-boundary=n, to align 2^n bytes, n default value is 4.
 
 Direct look:
+
 <img src="http://www.runqitian.com/content/jos_lab1/p3.jpg" style="width: 60%; display: block; margin: auto">
+
 reference:
 [link](https://stackoverflow.com/questions/41971481/what-are-the-following-instructions-after-this-call-assembly), [link](http://blog.opensecurityresearch.com/2013/06/reversing-basics-part-2-understanding.html), [link](https://stackoverflow.com/questions/3638075/explanation-about-push-ebp-and-pop-ebp-instruction-in-assembly)
 
@@ -356,10 +357,5 @@ mon_backtrace(int argc, char **argv, struct Trapframe *tf)
 * The %ebp saves the value of old %ebp pointer, we can backtrace simply by \*ebp. 
 * Notice that in entry.S, the top %ebp value is set to 0, which means when we quit the i386_init(), we will find ebp equals to 0, that is where we stop backtracing.
 
-## Exercise 12
-
-* In debuginfo_eip, where do \_\_STAB\_\* come from?
-
-> 
 
 
