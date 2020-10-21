@@ -1,4 +1,4 @@
-T 6.828 lab 1
+# MIT 6.828 lab 1
 ## Resource
 [course link](https://pdos.csail.mit.edu/6.828/2018/labguide.html)  
 [github solution link](https://github.com/runqitian/JOS)  
